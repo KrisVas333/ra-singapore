@@ -7,7 +7,7 @@
  */
 (function () {
   'use strict';
-  var CLARITY_ID = ''; // e.g. 'abcd1234xy' -> https://www.clarity.ms/tag/<id>
+  var CLARITY_ID = 'y4gk0je1j0'; // e.g. 'abcd1234xy' -> https://www.clarity.ms/tag/<id>
   var KEY = 'ra_sg_consent';
 
   function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
