@@ -112,12 +112,6 @@ ul,ol{padding:0;list-style:none}
 .kit li{border-top:3px solid var(--purple);padding-top:16px}
 .kit h3{font-size:1.2rem;margin:12px 0 6px}
 .kit p{color:var(--ink-2);font-size:1rem}
-.slides-t{font-weight:600;margin:40px 0 12px}
-.slides{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
-.slides img{flex:0 0 78%;max-width:420px;border-radius:10px;border:1px solid var(--line);scroll-snap-align:start;object-fit:cover;aspect-ratio:16/9}
-@media (min-width:900px){.slides img{flex-basis:24%}}
-.cta-band{margin-top:40px;background:var(--tint);border-radius:var(--r);padding:20px;display:grid;gap:16px}
-@media (min-width:900px){.cta-band{grid-template-columns:1fr auto;align-items:center;padding:24px 28px}}
 
 /* proof */
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:40px}
@@ -159,8 +153,6 @@ ul,ol{padding:0;list-style:none}
 .disclose svg{width:22px;height:22px;color:var(--purple);flex:none;margin-top:3px}
 
 /* singapore */
-.two{display:grid;gap:16px}
-@media (min-width:900px){.two{grid-template-columns:1fr 1fr;gap:24px}}
 .box{background:#fff;border-radius:var(--r);padding:20px;border:1px solid var(--line)}
 .box h3{font-size:1.25rem;margin-bottom:12px}
 .ticks li{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}
@@ -204,3 +196,68 @@ ul,ol{padding:0;list-style:none}
 .js .rv.is-in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
 .approx{font-family:var(--fb);font-weight:600;margin-right:2px}
+.slide1{margin-top:32px;max-width:560px}
+.slide1 img{border-radius:10px;border:1px solid var(--line)}
+.slide1 figcaption{font-size:.9rem;color:var(--ink-2);margin-top:8px}
+.creds{display:flex;flex-wrap:wrap;gap:8px;margin:-12px 0 24px}
+.creds li{border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:6px 14px;font-size:.92rem;color:#E2E6F2}
+.operator{background:rgba(255,255,255,.08);border-left:3px solid var(--cyan);border-radius:var(--r);padding:18px 20px;margin-bottom:24px}
+.operator h3{font-size:1.25rem;margin-bottom:8px}
+.operator p{color:#E2E6F2}
+.operator b{color:#fff}
+
+/* compact phone layout (critic: fewer screens) */
+@media (max-width:719px){
+  .sec{padding:44px 0}
+  .h2{font-size:1.65rem;margin-bottom:18px}
+  .sub{margin:-6px 0 18px}
+  .hero-media{aspect-ratio:16/10}
+  .hero-in{padding-bottom:28px}
+  .lead{margin-bottom:18px}
+  .here{margin-top:16px}
+  .pains{gap:12px;margin-bottom:24px}
+  .pains p{font-size:1rem}
+  .ic{width:40px;height:40px}.ic svg{width:22px;height:22px}
+  .story{padding:12px;gap:14px}
+  .story-t h3{font-size:1.25rem;margin-bottom:6px}
+  .story-t p{font-size:1rem;margin-bottom:6px}
+  .photos{grid-template-columns:repeat(3,1fr);grid-template-rows:auto}
+  .photos figure,.photos figure:first-child,.photos figure:not(:first-child){grid-row:auto;aspect-ratio:1/1}
+  .ladder{margin-top:18px;gap:8px}
+  .ladder li{padding:10px 12px;gap:12px;align-items:center}
+  .ladder .age{min-width:52px;font-size:1rem;padding:8px 6px}
+  .ladder h3{font-size:1.02rem;margin-bottom:0}
+  .ladder p{font-size:.92rem;line-height:1.45}
+  .kit{grid-template-columns:1fr 1fr;gap:14px}
+  .kit li{padding-top:10px}
+  .kit h3{font-size:1.02rem;margin:8px 0 4px}
+  .kit p{font-size:.9rem;line-height:1.45}
+  .slide1{margin-top:20px}
+  .stats{grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
+  .stats div{padding-left:8px}
+  .stats div:last-child{grid-column:auto}
+  .stats b{font-size:1.6rem}
+  .stats span{font-size:.78rem;display:block;line-height:1.3}
+  .creds{margin:0 0 18px;gap:6px}
+  .creds li{font-size:.82rem;padding:4px 10px}
+  .operator{padding:14px 16px;margin-bottom:18px}
+  .operator p{font-size:1rem}
+  .quote{padding:16px}
+  .quote p{font-size:1rem}
+  .quote footer{margin-top:10px}
+  .trio{margin-bottom:16px}
+  .people{gap:10px}
+  .person{grid-template-columns:52px 1fr;padding:12px}
+  .person img{width:52px;height:52px}
+  .person p:last-child{font-size:.92rem;line-height:1.45}
+  .timeline{margin-top:22px}
+  .timeline li{padding-bottom:12px}
+  .timeline p{font-size:.95rem}
+  .disclose{font-size:.92rem}
+  .box{padding:16px}
+  .ticks li{font-size:1rem;margin-bottom:6px}
+  .trust{font-size:.92rem;margin-top:14px}
+  .talk .cta-row{margin-bottom:18px}
+  .foot{padding:28px 0 96px}
+}
+.stats b{white-space:nowrap}
