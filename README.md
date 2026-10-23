@@ -1,11 +1,12 @@
-# Robotics Academy × BrainClub · Singapore partner page
+# Robotics Academy · Singapore partner page
 
-Static, mobile-first landing for Singapore partners (QR on the printed one-pager). Built 2026-10-21. NOT deployed.
+Static, mobile-first landing for Singapore enrichment centres and schools. QR on the printed one-pagers points here (`?src=sg-print`, `?src=sg-oct26`). Live: https://krisvas333.github.io/ra-singapore/ (noindex).
 
-- `index.html` · `css/style.css` · `js/main.js` (GSAP 3.12.5 + ScrollTrigger from cdnjs) · `js/consent.js`
-- Tracking (rule 16): `track.js` (cookieless events, `?src=` on every event) + Clarity only after "Allow". **TODO: set `CLARITY_ID` in js/consent.js.**
-- QR link should be `…/?src=qr-onepager`.
-- 75 s video slot: set `data-src` (+ `data-poster`) on `.vid-slot` in index.html.
-- WhatsApp: set `data-whatsapp="<digits>"` on `#wa` (hidden while empty).
-- og.jpg is relative: switch `og:image` to the absolute URL after deploy. Source: `tools/og-src.html`.
-- QA screenshots: `qa/`.
+v3 (2026-10-23): hook → problem → solution → how a partner runs it → proof → made by founders → Singapore pilot → CTA.
+
+- `index.html` · `css/style.css` · `js/main.js` (no libraries) · `js/consent.js`
+- Tracking (rule 16): `track.js` cookieless events, `src` on every event; Microsoft Clarity only after "Allow".
+- **WhatsApp:** set `WHATSAPP` in `js/main.js` (digits with country code). All WhatsApp buttons stay hidden while empty.
+- Video: `assets/video/robot-drawer.mp4` (trimmed lego-drawer cut, EN captions in `.en.vtt`).
+- og.jpg source: `tools/og-src.html` (render at 1200×630).
+- Numbers: only fact-sheet-verified ones (10,000+ kids/yr, ~120 mentors, 3 countries, 70+ ExoClass providers per Kris 2026-10-23).
