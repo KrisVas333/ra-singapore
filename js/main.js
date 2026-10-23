@@ -43,7 +43,7 @@
     v.addEventListener('timeupdate', function () { if (!half && v.duration && v.currentTime / v.duration > 0.5) { half = true; track('engage', { video_half: id }); } });
     v.addEventListener('ended', function () { track('value', { step: 'video_end', video: id }); });
   });
-  // "Watch 33 s" scrolls to the video and starts it
+  // "Watch 82 s" scrolls to the explainer (first video[data-vid]) and starts it; play / half / end events above cover both films
   var watch = $('[data-cta="hero-watch"]'), vid = $('video[data-vid]');
   if (watch && vid) watch.addEventListener('click', function () { setTimeout(function () { try { vid.play(); } catch (e) {} }, 600); });
 

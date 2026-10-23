@@ -87,6 +87,9 @@ ul,ol{padding:0;list-style:none}
 @media (min-width:900px){.story{grid-template-columns:1.3fr 1fr;padding:28px;gap:36px}}
 .vid video{width:100%;border-radius:10px;background:#000;aspect-ratio:16/9}
 .vid figcaption{font-size:.85rem;color:#B9C1D9;margin-top:8px}
+.explainer{margin:8px 0 28px}
+.explainer figcaption{color:var(--ink-2)}
+@media (min-width:900px){.explainer{max-width:1040px}}
 .story-t h3{font-size:1.5rem;margin-bottom:12px;color:#fff}
 .story-t p{color:#E2E6F2;margin-bottom:10px;max-width:38ch}
 
