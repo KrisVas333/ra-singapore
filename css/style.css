@@ -265,3 +265,10 @@ ul,ol{padding:0;list-style:none}
 }
 .stats b{white-space:nowrap}
 .stats b{white-space:nowrap}
+/* mobile: compact consent so it stays well under the first screen; 44px tap targets */
+@media (max-width:600px){
+  .consent{left:8px;right:8px;bottom:8px;padding:10px 12px;font-size:.78rem;line-height:1.3}
+  .consent-actions{gap:8px;margin-top:8px;flex-wrap:nowrap}
+  .consent .btn{flex:1;padding:6px 10px;font-size:.85rem}
+  .linkbtn{display:inline-block;padding:12px 6px;margin:-12px -6px}
+}
